@@ -2,9 +2,9 @@
 
 ## Integrantes
 
-Guilherme Caio Pimentel
-José Henrique Pereira Brito
-Pedro Henrique Correa Diniz
+Guilherme Caio Pimentel;
+José Henrique Pereira Brito;
+Pedro Henrique Correa Diniz;
 Rodrigo Gonçalves Giancott Magalhães
 
 ## Descrição
