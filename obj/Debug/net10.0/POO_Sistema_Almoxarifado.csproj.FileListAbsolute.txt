@@ -1,0 +1,15 @@
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\bin\Debug\net10.0\POO_Sistema_Almoxarifado.exe
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\bin\Debug\net10.0\POO_Sistema_Almoxarifado.deps.json
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\bin\Debug\net10.0\POO_Sistema_Almoxarifado.runtimeconfig.json
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\bin\Debug\net10.0\POO_Sistema_Almoxarifado.dll
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\bin\Debug\net10.0\POO_Sistema_Almoxarifado.pdb
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.GeneratedMSBuildEditorConfig.editorconfig
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.AssemblyInfoInputs.cache
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.AssemblyInfo.cs
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.csproj.CoreCompileInputs.cache
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.sourcelink.json
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.dll
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\refint\POO_Sistema_Almoxarifado.dll
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.pdb
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\POO_Sistema_Almoxarifado.genruntimeconfig.cache
+K:\.ARQUIVOS DO USUÁRIO\Desktop\Faculdade SI\Terceiro período\POO\Trabalho Final\POO_Sistema_Almoxarifado\obj\Debug\net10.0\ref\POO_Sistema_Almoxarifado.dll

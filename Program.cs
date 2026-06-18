@@ -83,3 +83,16 @@ public class Lote
         return false;
     }
 }
+
+class Program
+{
+    static void Main()
+    {
+        // Apenas testando para ver se os arquivos serão criados
+        Relatorio entrada = new RelatorioEntrada();
+        Relatorio saida = new RelatorioSaida();
+
+        entrada.Imprimir();
+        saida.Imprimir();
+    }
+}
