@@ -29,6 +29,11 @@ public class Produto
         lotes.Add(lote);
     }
 
+    public int ObterIdProduto()
+    {
+        return idProduto;
+    }
+
     public string ObterNome()
     {
         return nome;
@@ -85,6 +90,11 @@ public class Lote
         return false;
     }
 
+    public int ObterIdLote()
+    {
+        return idLote;
+    }
+
     public string ObterCodigoLote()
     {
         return codigoLote;
@@ -93,6 +103,11 @@ public class Lote
     public int ObterQuantidadeAtual()
     {
         return quantidadeAtual;
+    }
+
+    public DateTime ObterValidade()
+    {
+        return dataValidade;
     }
 
     public Produto ObterProduto()

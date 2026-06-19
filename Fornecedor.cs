@@ -21,4 +21,29 @@ public class Fornecedor
     {
         produtos.Add(produto);
     }
+
+    public int ObterIdFornecedor()
+    {
+        return idFornecedor;
+    }
+
+    public string ObterNome()
+    {
+        return nome;
+    }
+
+    public string ObterCnpj()
+    {
+        return cnpj;
+    }
+
+    public string ObterTelefone()
+    {
+        return telefone;
+    }
+
+    public string ObterEmail()
+    {
+        return email;
+    }
 }
