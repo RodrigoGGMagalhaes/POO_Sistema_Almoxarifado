@@ -4,6 +4,7 @@
 
 Guilherme Caio Pimentel;
 José Henrique Pereira Brito;
+Matheus Trindade Rocha;
 Pedro Henrique Correa Diniz;
 Rodrigo Gonçalves Giancott Magalhães
 
