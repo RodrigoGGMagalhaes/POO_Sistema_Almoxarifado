@@ -53,6 +53,12 @@ public class Produto
     {
         return categoria;
     }
+
+    public int IdProduto { get {return idProduto;} set{idProduto = value;} }
+    public string Nome { get{return nome;} set{nome = value;} }
+    public string Descricao { get{return descricao;} set{descricao = value;} }
+    public double Preco { get{return preco;} set{preco = value;} }
+    public string Categoria { get{return categoria;} set{categoria = value;} }
 }
 
 public class Lote
@@ -114,4 +120,10 @@ public class Lote
     {
         return produto;
     }
+
+    public int IdLote{get{return idLote;} set{idLote = value;}}
+    public string CodigoLote{get{return codigoLote;} set{codigoLote = value;}}
+    public int QuantidadeAtual{get {return quantidadeAtual;} set{quantidadeAtual = value;}}
+    public DateTime DataValidade{get {return dataValidade;} set{dataValidade = value;}}
+    public Produto Produto{get {return produto;} set{produto = value;}}
 }

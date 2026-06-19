@@ -54,6 +54,12 @@ public class Movimentacao
     {
         return itens;
     }
+
+    public int IdMovimentacao{get{return idMovimentacao;} set{idMovimentacao = value;}}
+    public DateTime Data{get{return data;} set{data = value;}}
+    public string Tipo{get{return tipo;} set{tipo = value;}}
+    public string Observacao{get{return observacao;} set{observacao = value;}}
+    public List<ItemMovimentacao> Itens{get{return itens;} set{itens = value;}}
 }
 
 public class ItemMovimentacao
@@ -76,4 +82,7 @@ public class ItemMovimentacao
     {
         return quantidade;
     }
+
+    public Lote Lote{get{return lote;} set{lote = value;}}
+    public int Quantidade{get{return quantidade;} set{quantidade = value;}}
 }

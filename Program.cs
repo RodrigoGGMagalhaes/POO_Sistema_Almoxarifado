@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.Text.Json;
+
+class Program
 {
     static List<Produto> produtos = new List<Produto>();
     static List<Fornecedor> fornecedores = new List<Fornecedor>();
@@ -9,6 +11,10 @@
     {
         Console.Clear(); // Limpar o terminal de mensagens de possíveis erros
 
+        CarregarProdutos();
+        CarregarLotes();
+        CarregarFornecedores();
+        CarregarMovimentacoes();
         int paginaMenu = 1;
 
         do
@@ -29,6 +35,10 @@
             {
                 case 0:
                 Console.WriteLine("Obrigado por utilizar nosso sistema!");
+                SalvarProdutos();
+                SalvarLotes();
+                SalvarFornecedores();
+                SalvarMovimentacoes();
                 break;
 
                 case 1:
@@ -414,6 +424,12 @@
                         break;
                     }
 
+                if (movEntradaEscolhida == null)
+                {
+                    Console.WriteLine("Relatório não encontrado!");
+                    break;
+                }
+
             Relatorio entrada = new RelatorioEntrada(movEntradaEscolhida);
             entrada.Imprimir();
             break;
@@ -438,6 +454,12 @@
                         break;
                     }
 
+            if (movSaidaEscolhida == null)
+                {
+                    Console.WriteLine("Relatório não encontrado!");
+                    break;
+                }
+
             Relatorio saida = new RelatorioSaida(movSaidaEscolhida);
             saida.Imprimir();
             break;
@@ -447,6 +469,66 @@
             Console.ReadKey();
             Console.WriteLine();
             break;
+        }
+    }
+
+    static void SalvarProdutos()
+    {
+        string json = JsonSerializer.Serialize(produtos, new JsonSerializerOptions {WriteIndented = true});
+        File.WriteAllText("produtos.json", json);
+    }
+
+    public static void SalvarLotes()
+    {
+        string json = JsonSerializer.Serialize(lotes, new JsonSerializerOptions {WriteIndented = true});
+        File.WriteAllText("lotes.json", json);
+    }
+
+    public static void SalvarFornecedores()
+    {
+        string json = JsonSerializer.Serialize(fornecedores, new JsonSerializerOptions {WriteIndented = true});
+        File.WriteAllText("fornecedores.json", json);
+    }
+
+    public static void SalvarMovimentacoes()
+    {
+        string json = JsonSerializer.Serialize(movimentacoes, new JsonSerializerOptions {WriteIndented = true});
+        File.WriteAllText("movimentacoes.json", json);
+    }
+
+    public static void CarregarProdutos()
+    {
+        if (File.Exists("produtos.json"))
+        {
+            string json = File.ReadAllText("produtos.json");
+            produtos = JsonSerializer.Deserialize<List<Produto>>(json);
+        }
+    }
+
+    public static void CarregarLotes()
+    {
+        if (File.Exists("lotes.json"))
+        {
+            string json = File.ReadAllText("lotes.json");
+            lotes = JsonSerializer.Deserialize<List<Lote>>(json);
+        }
+    }
+
+    public static void CarregarFornecedores()
+    {
+        if (File.Exists("fornecedores.json"))
+        {
+            string json = File.ReadAllText("fornecedores.json");
+            fornecedores = JsonSerializer.Deserialize<List<Fornecedor>>(json);
+        }
+    }
+
+    public static void CarregarMovimentacoes()
+    {
+        if (File.Exists("movimentacoes.json"))
+        {
+            string json = File.ReadAllText("movimentacoes.json");
+            movimentacoes = JsonSerializer.Deserialize<List<Movimentacao>>(json);
         }
     }
 }

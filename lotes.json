@@ -1,0 +1,28 @@
+[
+  {
+    "IdLote": 100,
+    "CodigoLote": "aaa",
+    "QuantidadeAtual": 8,
+    "DataValidade": "2030-01-30T00:00:00",
+    "Produto": {
+      "IdProduto": 10,
+      "Nome": "teste 1",
+      "Descricao": "produto teste 1",
+      "Preco": 0.99,
+      "Categoria": "testes"
+    }
+  },
+  {
+    "IdLote": 102,
+    "CodigoLote": "bbb",
+    "QuantidadeAtual": 50,
+    "DataValidade": "2030-01-30T00:00:00",
+    "Produto": {
+      "IdProduto": 11,
+      "Nome": "teste 2",
+      "Descricao": "produto teste 2",
+      "Preco": 0.99,
+      "Categoria": "testes"
+    }
+  }
+]

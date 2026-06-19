@@ -1,0 +1,16 @@
+[
+  {
+    "IdProduto": 10,
+    "Nome": "teste 1",
+    "Descricao": "produto teste 1",
+    "Preco": 0.99,
+    "Categoria": "testes"
+  },
+  {
+    "IdProduto": 11,
+    "Nome": "teste 2",
+    "Descricao": "produto teste 2",
+    "Preco": 0.99,
+    "Categoria": "testes"
+  }
+]

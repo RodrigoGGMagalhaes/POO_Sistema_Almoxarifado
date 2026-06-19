@@ -1,0 +1,26 @@
+[
+  {
+    "IdMovimentacao": 1926,
+    "Data": "2026-06-19T18:22:57.9703461-03:00",
+    "Tipo": "saida",
+    "Observacao": "pfvr teste final",
+    "Itens": [
+      {
+        "Lote": {
+          "IdLote": 100,
+          "CodigoLote": "aaa",
+          "QuantidadeAtual": 8,
+          "DataValidade": "2030-01-30T00:00:00",
+          "Produto": {
+            "IdProduto": 10,
+            "Nome": "teste 1",
+            "Descricao": "produto teste 1",
+            "Preco": 0.99,
+            "Categoria": "testes"
+          }
+        },
+        "Quantidade": 5
+      }
+    ]
+  }
+]

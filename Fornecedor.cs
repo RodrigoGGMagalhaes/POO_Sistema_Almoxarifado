@@ -46,4 +46,10 @@ public class Fornecedor
     {
         return email;
     }
+
+    public int IdFornecedor{get{ return idFornecedor;} set{idFornecedor = value;}}
+    public string Nome{get {return nome;} set{nome = value;}}
+    public string Cnpj{get{return cnpj;} set{cnpj = value;}}
+    public string Telefone{get{return telefone;} set{telefone = value;}}
+    public string Email{get{return email;} set{email = value;}}
 }
