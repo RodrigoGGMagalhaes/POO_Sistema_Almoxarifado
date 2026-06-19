@@ -6,6 +6,7 @@ public class Produto
     private double preco;
     private string categoria;
     private List<Fornecedor> fornecedores;
+    private List<Lote> lotes;
 
     public Produto(int idProduto, string nome, string descricao, double preco, string categoria)
     {
@@ -15,11 +16,37 @@ public class Produto
         this.preco = preco;
         this.categoria = categoria;
         fornecedores = new List<Fornecedor>();
+        lotes = new List<Lote>();
     }
 
     public void AdicionarFornecedor(Fornecedor fornecedor)
     {
         fornecedores.Add(fornecedor);
+    }
+
+    public void AdicionarLote(Lote lote)
+    {
+        lotes.Add(lote);
+    }
+
+    public string ObterNome()
+    {
+        return nome;
+    }
+
+    public string ObterDescricao()
+    {
+        return descricao;
+    }
+
+    public double ObterPreco()
+    {
+        return preco;
+    }
+
+    public string ObterCategoria()
+    {
+        return categoria;
     }
 }
 
@@ -56,5 +83,20 @@ public class Lote
             return true;
         }
         return false;
+    }
+
+    public string ObterCodigoLote()
+    {
+        return codigoLote;
+    }
+
+    public int ObterQuantidadeAtual()
+    {
+        return quantidadeAtual;
+    }
+
+    public Produto ObterProduto()
+    {
+        return produto;
     }
 }
