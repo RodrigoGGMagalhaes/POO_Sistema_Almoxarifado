@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POO_Sistema_Almoxarifado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e3da831badf38b2e553f1ea5518aca2b7571ced")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd4eae70d2718d03266e1cc0e7691d957326d4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("POO_Sistema_Almoxarifado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POO_Sistema_Almoxarifado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,6 +18,7 @@
 
             Console.WriteLine("1 - Cadastro de Informações");
             Console.WriteLine("2 - Listagem de Informações");
+            Console.WriteLine("3 - Imprimir Relatório");
             Console.WriteLine("0 - Sair");
 
             Console.Write("ESCOLHA: ");
@@ -36,6 +37,10 @@
 
                 case 2:
                 Listagem();
+                break;
+
+                case 3:
+                ImprimirRelatorio();
                 break;
                 
                 default:
@@ -212,7 +217,7 @@
             foreach (Lote lote in lotes)
             {
                 Console.WriteLine($"PRODUTO: {lote.ObterProduto().ObterNome()}");
-                Console.WriteLine($"LOTE DO PRODUTO: {lote.ObterIdLote()} - {lote.ObterCodigoLote()}\n");
+                Console.WriteLine($"LOTE DO PRODUTO: {lote.ObterCodigoLote()} - ID: {lote.ObterIdLote()}\n");
             }
 
             Console.Write("Informe o ID do lote: ");
@@ -359,6 +364,84 @@
             Console.ReadKey();
             break;
             
+            default:
+            Console.WriteLine($"Número inválido!\n(Clique novamente para continuar)");
+            Console.ReadKey();
+            Console.WriteLine();
+            break;
+        }
+    }
+
+    public static void ImprimirRelatorio()
+    {
+        int paginaImprimir;
+
+        Console.WriteLine("=== IMPRIMIR RELATÓRIO ===");
+        Console.WriteLine();
+
+        Console.WriteLine("Tipo de relatório a ser impresso");
+        Console.WriteLine("1 - Entrada");
+        Console.WriteLine("2 - Saída");
+        Console.WriteLine("0 - Cancelar");
+        Console.Write("ESCOLHA: ");
+        paginaImprimir = int.Parse(Console.ReadLine());
+
+        switch (paginaImprimir)
+        {
+            case 0:
+            Console.WriteLine($"Voltando ao menu...\n(Clique novamente para continuar)");
+            Console.ReadKey();
+            Console.WriteLine();
+            break;
+
+            case 1:
+            foreach(Movimentacao mov in movimentacoes)
+                if(mov.ObterTipo() == "entrada")
+                    {
+                        Console.WriteLine($"ID: {mov.ObterIdMovimentacao()} - DATA: {mov.ObterData()}");
+                        Console.WriteLine($"OBSERVAÇÃO: {mov.ObterObservacao()}");
+                    }
+
+            Console.Write("Informe o ID da Movimentação: ");
+            int idMovimentacaoEntrada = int.Parse(Console.ReadLine());
+
+            Movimentacao movEntradaEscolhida = null;
+            
+            foreach(Movimentacao mov in movimentacoes)
+                if(idMovimentacaoEntrada == mov.ObterIdMovimentacao())
+                    {
+                        movEntradaEscolhida = mov;
+                        break;
+                    }
+
+            Relatorio entrada = new RelatorioEntrada(movEntradaEscolhida);
+            entrada.Imprimir();
+            break;
+
+            case 2:
+            foreach(Movimentacao mov in movimentacoes)
+                if(mov.ObterTipo() == "saida")
+                    {
+                        Console.WriteLine($"ID: {mov.ObterIdMovimentacao()} - DATA: {mov.ObterData()}");
+                        Console.WriteLine($"OBSERVAÇÃO: {mov.ObterObservacao()}");
+                    }
+
+            Console.Write("Informe o ID da Movimentação: ");
+            int idMovimentacaoSaida = int.Parse(Console.ReadLine());
+
+            Movimentacao movSaidaEscolhida = null;
+
+            foreach(Movimentacao mov in movimentacoes)
+                if(idMovimentacaoSaida == mov.ObterIdMovimentacao())
+                    {
+                        movSaidaEscolhida = mov;
+                        break;
+                    }
+
+            Relatorio saida = new RelatorioSaida(movSaidaEscolhida);
+            saida.Imprimir();
+            break;
+
             default:
             Console.WriteLine($"Número inválido!\n(Clique novamente para continuar)");
             Console.ReadKey();

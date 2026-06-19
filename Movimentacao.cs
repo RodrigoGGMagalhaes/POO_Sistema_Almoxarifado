@@ -30,16 +30,6 @@ public class Movimentacao
         return total;
     }
 
-    public bool EhEntrada()
-    {
-        return tipo == "Entrada";
-    }
-
-    public bool EhSaida()
-    {
-        return tipo == "Saida";
-    }
-
     public int ObterIdMovimentacao()
     {
         return idMovimentacao;
